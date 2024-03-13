@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale= text-center1.0"
+      class="form-control"
+      style="border-radius: 30px"
+      placeholder="Amount"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+
+    <title>Cash Calculator</title>
+  </head>
+
+  <body>
+    <div
+      class="container-fluid p-3"
+      style="
+        background-image: url(https://img.freepik.com/premium-photo/hands-businessman-holding-money-indian-rupee-currency_8087-3079.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      "
+    >
+      <div class="row">
+        <div class="col-md-12 text-warning text-center">
+          <h1>Cash Calculator</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div
+            class="container p-5"
+            style="background-color: rgba(0, 0, 0, 0.8)"
+          >
+            <div class="row">
+              <div class="col-md-3">
+                <img
+                  src="assets/Cash2000.png"
+                  alt=""
+                  class="h-50 w-100 img-fluid"
+                />
+              </div>
+              <div class="col-md-1 text-white h2 text-center">X</div>
+              <div class="col-md-3">
+                <input
+                  type="number"
+                  name=""
+                  id="Note2000"
+                  onkeyup="getNote2000();"
+                  class="form-control text-center"
+                  style="border-radius: 10px"
+                  placeholder="Enter Qty"
+                />
+              </div>
+              <div class="col-md-1 text-white h2 text-center">=</div>
+              <div class="col-md-4">
+                <input
+                  type="text"
+                  name=""
+                  id="ResultNote2000"
+                  class="form-control text-center"
+                  style="border-radius: 30px"
+                  placeholder="Amount"
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-3">
+                <img
+                  src="assets/Cash500.png"
+                  alt=""
+                  class="h-50 w-100 img-fluid"
+                />
+              </div>
+              <div class="col-md-1 text-white h2 text-center">X</div>
+              <div class="col-md-3">
+                <input
+                  type="number"
+                  name=""
+                  id="Note500"
+                  onkeyup="getNote500();"
+                  class="form-control text-center"
+                  style="border-radius: 10px"
+                  placeholder="Enter Qty"
+                />
+              </div>
+              <div class="col-md-1 text-white h2 text-center">=</div>
+              <div class="col-md-4">
+                <input
+                  type="text"
+                  name=""
+                  id="ResultNote500"
+                  class="form-control text-center"
+                  style="border-radius: 30px"
+                  placeholder="Amount"
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-3">
+                <img
+                  src="assets/Cash200.png"
+                  alt=""
+                  class="h-50 w-100 img-fluid"
+                />
+              </div>
+              <div class="col-md-1 text-white h2 text-center">X</div>
+              <div class="col-md-3">
+                <input
+                  type="number"
+                  name=""
+                  id="Note200"
+                  onkeyup="getNote200();"
+                  class="form-control text-center"
+                  style="border-radius: 10px"
+                  placeholder="Enter Qty"
+                />
+              </div>
+              <div class="col-md-1 text-white h2 text-center">=</div>
+              <div class="col-md-4">
+                <input
+                  type="text"
+                  name=""
+                  id="ResultNote200"
+                  class="form-control text-center"
+                  style="border-radius: 30px"
+                  placeholder="Amount"
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-3">
+                <img
+                  src="assets/Cash100.png"
+                  alt=""
+                  class="h-50 w-100 img-fluid"
+                />
+              </div>
+              <div class="col-md-1 text-white h2 text-center">X</div>
+              <div class="col-md-3">
+                <input
+                  type="number"
+                  name=""
+                  id="Note100"
+                  onkeyup="getNote100();"
+                  class="form-control text-center"
+                  style="border-radius: 10px"
+                  placeholder="Enter Qty"
+                />
+              </div>
+              <div class="col-md-1 text-white h2 text-center">=</div>
+              <div class="col-md-4">
+                <input
+                  type="text"
+                  name=""
+                  id="ResultNote100"
+                  class="form-control text-center"
+                  style="border-radius: 30px"
+                  placeholder="Amount"
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-3">
+                <img
+                  src="assets/Cash50.png"
+                  alt=""
+                  class="h-50 w-100 img-fluid"
+                />
+              </div>
+              <div class="col-md-1 text-white h2 text-center">X</div>
+              <div class="col-md-3">
+                <input
+                  type="number"
+                  name=""
+                  id="Note50"
+                  onkeyup="getNote50();"
+                  class="form-control text-center"
+                  style="border-radius: 10px"
+                  placeholder="Enter Qty"
+                />
+              </div>
+              <div class="col-md-1 text-white h2 text-center">=</div>
+              <div class="col-md-4">
+                <input
+                  type="text"
+                  name=""
+                  id="ResultNote50"
+                  class="form-control text-center"
+                  style="border-radius: 30px"
+                  placeholder="Amount"
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-3">
+                <img
+                  src="assets/Cash20.png"
+                  alt=""
+                  class="h-50 w-100 img-fluid"
+                />
+              </div>
+              <div class="col-md-1 text-white h2 text-center">X</div>
+              <div class="col-md-3">
+                <input
+                  type="number"
+                  name=""
+                  id="Note20"
+                  onkeyup="getNote20();"
+                  class="form-control text-center"
+                  style="border-radius: 10px"
+                  placeholder="Enter Qty"
+                />
+              </div>
+              <div class="col-md-1 text-white h2 text-center">=</div>
+              <div class="col-md-4">
+                <input
+                  type="text"
+                  name=""
+                  id="ResultNote20"
+                  class="form-control text-center"
+                  style="border-radius: 30px"
+                  placeholder="Amount"
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-3">
+                <img
+                  src="assets/Cash10.png"
+                  alt=""
+                  class="h-50 w-100 img-fluid"
+                />
+              </div>
+              <div class="col-md-1 text-white h2 text-center">X</div>
+              <div class="col-md-3">
+                <input
+                  type="number"
+                  name=""
+                  id="Note10"
+                  onkeyup="getNote10();"
+                  class="form-control text-center"
+                  style="border-radius: 10px"
+                  placeholder="Enter Qty"
+                />
+              </div>
+              <div class="col-md-1 text-white h2 text-center">=</div>
+              <div class="col-md-4">
+                <input
+                  type="text"
+                  name=""
+                  id="ResultNote10"
+                  class="form-control text-center"
+                  style="border-radius: 30px"
+                  placeholder="Amount"
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-8">
+                <button onclick="total();" class="btn btn-warning form-control">
+                  Total
+                </button>
+              </div>
+
+              <div class="col-md-4">
+                <input
+                  type="number"
+                  name=""
+                  id="Total"
+                  class="form-control text-center"
+                  style="border-radius: 30px"
+                  placeholder="Total Amount"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

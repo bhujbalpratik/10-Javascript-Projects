@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#ListContainer {
+    list-style-type: none;
+}
+
+#ListContainer li {
+    background: linear-gradient(45deg, gold, yellow, gold);
+    padding: 10px 5px 10px 53px;
+    border-radius: 37px;
+    border-radius: 40px 0px 40px 0px;
+    text-align: left;
+    margin-top: 14px;
+    position: relative;
+}
+
+#ListContainerMobile {
+    list-style-type: none;
+}
+
+#ListContainerMobile li {
+    background: linear-gradient(45deg, gold, yellow, gold);
+    padding: 10px 5px 10px 53px;
+    border-radius: 37px;
+    border-radius: 40px 0px 40px 0px;
+    text-align: left;
+    margin-top: 14px;
+    position: relative;
+}
+
+.rmv {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 33px;
+    top: 5px;
+    right: 18px;
+    font-size: 20px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+
+input[type="checkbox"] {
+    visibility: hidden;
+    position: relative;
+    margin-right: .4em;
+    font-size: 1em;
+    height: .9em;
+    width: .9em;
+
+    &:before,
+    &:after {
+        box-sizing: border-box;
+        visibility: visible;
+        display: inline-block;
+        content: '';
+        touch-action: manipulation;
+        cursor: pointer;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: .9em;
+        height: .9em;
+
+        border: .1em solid grey;
+        border-radius: 50%;
+    }
+
+    &:after {
+        transition: all .3s ease-in-out, border-top, border-right;
+        transition-delay: 0s, .3s, .3s;
+        z-index: 2;
+    }
+
+    &:checked:after {
+        height: .4em;
+        border-top: none;
+        border-right: none;
+        border-width: .15em;
+        border-radius: 0px;
+        border-bottom-left-radius: .05em;
+        border-color: red;
+        transform: rotate(-45deg) translate(0.1em, 0.2em) scale(1.1);
+        box-shadow: -0.05em 0.08em 0.1em rgba(0, 0, 0, 0.5);
+    }
+
+}
