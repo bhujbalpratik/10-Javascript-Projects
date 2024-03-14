@@ -1,4 +1,4 @@
-#All projects are live 
+# All projects are live 
 
 1.Guess Number Game : 
 https://10jsprojects-guessnumbergame.vercel.app/
@@ -30,7 +30,4 @@ https://10jsprojects-tictactoe.vercel.app/
 10.Weather App :
 https://10jsprojects-weatherapp.vercel.app/
 
-Try to open these projects in destop mode.
-
-Source Code :
-https://github.com/bhujbalpratik/10-Javascript-Projects
+Try to open these projects in desktop mode.
